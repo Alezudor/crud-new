@@ -3,9 +3,9 @@ import "./styles.css";
 import Button from "../../Components/Button";
 
 const empregados = [
-  { id: 1, nome: "Pedro", salario: 2345, departamento: "Gari" },
-  { id: 2, nome: "Isaac", salario: 2500, departamento: "Cozinheiro" },
-  { id: 3, nome: "Kelvin", salario: 4500, departamento: "Influencer" },
+  { id: 1, nome: "Rakesh", salario: 2345, departamento: "IT" },
+  { id: 2, nome: "Priranka", salario: 2500, departamento: "HR" },
+  { id: 3, nome: "Anurag", salario: 4500, departamento: "Sales" },
 ];
 
 export default function Home() {
@@ -16,13 +16,13 @@ export default function Home() {
   return (
     <div className="container">
       <div className="header">
-        <h1>DEV &lt;2024091&gt;</h1>
+        <h1>CRUD &lt;2024091&gt;</h1>
       </div>
 
-      <h2 className="titulo">Registro de Funcionários</h2>
+      <h2 className="titulo">Registro de Empregados</h2>
 
       <Button onClick={handleAdd} variant="default">
-        Adicionar novo funcionário
+        Adicionar novo empregado
       </Button>
 
       <table className="tabela">
@@ -31,7 +31,7 @@ export default function Home() {
             <th>ID</th>
             <th>Nome</th>
             <th>Salário</th>
-            <th>Cargo</th>
+            <th>Departamento</th>
             <th>Ação</th>
           </tr>
         </thead>
@@ -44,10 +44,10 @@ export default function Home() {
               <td>{emp.departamento}</td>
               <td>
                 <Button variant="edit" onClick={() => handleEdit(emp.nome)}>
-                  Editar
+                  Edit
                 </Button>
                 <Button variant="delete" onClick={() => handleDelete(emp.nome)}>
-                  Deletar
+                  Delete
                 </Button>
               </td>
             </tr>
