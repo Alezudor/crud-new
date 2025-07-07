@@ -1,0 +1,37 @@
+.container {
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #3a1970;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: rgb(240, 122, 122);
+    margin: 0;
+  }
+  
+  .titulo {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .tabela th {
+    border-bottom: 2px solid #ccc;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
