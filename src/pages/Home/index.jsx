@@ -30,10 +30,10 @@ export default function Home() {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Nome</th>
-              <th>Salário</th>
-              <th>Departamento</th>
-              <th>Ação</th>
+              <th>Name</th>
+              <th>Salary</th>
+              <th>Department</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
